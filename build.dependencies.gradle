@@ -1,7 +1,7 @@
 repositories {
     mavenCentral()
-    maven { url = "https://mymaven.bylazar.com/releases" } // Pedropathing
     google() // Needed for androidx
+    maven { url = "https://mymaven.bylazar.com/releases" } // Pedropathing
 }
 
 dependencies {
