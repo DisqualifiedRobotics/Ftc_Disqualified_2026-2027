@@ -17,7 +17,7 @@ apply from: '../build.common.gradle'
 apply from: '../build.dependencies.gradle'
 
 android {
-    namespace = 'org.firstinspires.ftc.teamcode32964'
+    namespace = 'org.firstinspires.ftc.teamcode'
 
     packagingOptions {
         jniLibs.useLegacyPackaging true
@@ -26,11 +26,4 @@ android {
 
 dependencies {
     implementation project(':FtcRobotController')
-
-    // Pedropathing for BIOBUZZ Season
-    implementation 'com.pedropathing:ftc:2.0.3'
-    implementation 'com.pedropathing:telemetry:1.0.0'
-    implementation 'com.bylazar:fullpanels:1.0.6'
-    // FTCLib
-    implementation 'org.ftclib.ftclib:core:2.1.1'
 }
