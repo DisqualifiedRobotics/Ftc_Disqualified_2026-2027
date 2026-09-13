@@ -27,7 +27,7 @@ android {
 dependencies {
     implementation project(':FtcRobotController')
 
-    // Pedropathing for BIOBUZZ season
+    // Pedropathing for BIOBUZZ Season
     implementation 'com.pedropathing:ftc:2.0.3'
     implementation 'com.pedropathing:telemetry:1.0.0'
     implementation 'com.bylazar:fullpanels:1.0.6'
