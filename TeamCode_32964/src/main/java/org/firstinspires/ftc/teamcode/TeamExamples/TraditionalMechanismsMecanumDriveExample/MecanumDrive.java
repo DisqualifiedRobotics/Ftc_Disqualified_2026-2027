@@ -1,7 +1,6 @@
-package org.firstinspires.ftc.teamcode.TeamExamples.TeamExamples.TraditionalMechanismsMecanumDriveExample;
+package org.firstinspires.ftc.teamcode.TeamExamples.TraditionalMechanismsMecanumDriveExample;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.Gamepad;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 public class MecanumDrive {
@@ -22,9 +21,9 @@ public class MecanumDrive {
     // It is standard practice to comment and describe the methods you make
     // COMMENT YOUR CODE
     /**
-     * Description: Initializes drivetrain and internal gamepad object
-     * Pre-Condition: hardwareMap and gamepad must be provided
-     * Post-Condition: HardwareMap properly initialized in Motor Objects with gamepad values transferred
+     * Description: Initializes drivetrain
+     * Pre-Condition: hardwareMap must be provided
+     * Post-Condition: HardwareMap properly initialized in Motor Objects with correct directions
      * @param hardwareMap HardwareMap Object
      */
     public MecanumDrive(HardwareMap hardwareMap) {
@@ -87,9 +86,6 @@ public class MecanumDrive {
         maxPower = Math.max(maxPower, Math.abs(backRightPower));
         maxPower = Math.max(maxPower, Math.abs(backLeftPower));
 
-        // We multiply by maxSpeed so that it can be set lower for outreaches
-        // When a young child is driving the robot, we may not want to allow full
-        // speed.
         frontLeftDrive.setPower(frontLeftPower / maxPower);
         frontRightDrive.setPower(frontRightPower / maxPower);
         backLeftDrive.setPower(backLeftPower / maxPower);

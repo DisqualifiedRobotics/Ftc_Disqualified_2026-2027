@@ -1,20 +1,22 @@
-package org.firstinspires.ftc.teamcode.TeamExamples.TeamExamples.TraditionalMechanismsMecanumDriveExample;
+package org.firstinspires.ftc.teamcode.TeamExamples.TraditionalMechanismsMecanumDriveExample;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
+@TeleOp(name="Mecanum Drive Example")
 public class MainTeleop extends OpMode {
 
     // Declare Mecanum Drive Object
     MecanumDrive drive;
 
-    // The main init for the init phase
+    // The main init for the init phase in teleop
     @Override
     public void init() {
         // Initialize Constructor, pass hardwareMap
         drive = new MecanumDrive(hardwareMap);
     }
 
-    // The main loop for the play phase
+    // The main loop for the play phase in teleop
     @Override
     public void loop() {
         // Continuously update the drive logic with gamepad inputs
